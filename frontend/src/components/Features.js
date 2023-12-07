@@ -2,7 +2,7 @@ import React from 'react';
 
 function Features() {
   return (
-    <div className="bg-dark text-white py-8">
+    <div className="bg-dark text-white py-8 features">
       <div className="container mx-auto px-6 md:px-12 lg:px-24 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
         {/* 24/7 Call Answering */}
         <div>

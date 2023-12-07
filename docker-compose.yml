@@ -24,6 +24,8 @@ services:
   frontend:
     build:
       context: ./frontend
+      args:
+        - NODE_ENV
       dockerfile: Dockerfile
     mem_limit: 2048M
     user: "1000:1000"

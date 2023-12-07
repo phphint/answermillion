@@ -17,3 +17,26 @@ code {
     monospace;
 }
  
+.recaptcha-wrapper {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  transform: scale(0.75); /* Scale down to 90% of its original size */
+  transform-origin: center; /* Ensure it scales from the center */
+}
+body {
+  background: 
+    radial-gradient(circle at top left, #47aebf, rgba(71,174,191,0) 70%), 
+    radial-gradient(circle at top right, #112a3e, rgba(17,42,62,0) 70%), 
+    radial-gradient(circle at bottom left, #0b1522, rgba(11,21,34,0) 70%), 
+    radial-gradient(circle at bottom right, #152f43, rgba(21,47,67,0) 70%);
+  background-size: 100% 100%;
+  height: 100vh;
+  margin: 0;
+}
+
+.features-page .features.bg-dark {
+  background-color: rgba(0, 0, 0, 0.2); /* Black with 50% opacity */
+  border-radius: 20px; /* Big radius for rounded corners */
+  margin-bottom:1rem;
+}
+

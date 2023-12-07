@@ -1,19 +1,38 @@
-import React from 'react';
-import Header from './components/Header'; // Adjust the path as necessary
-import Footer from './components/Footer'; // Adjust the path as necessary
-import Features from './components/Features'; // Adjust the path as necessary
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import TermsOfService from "./pages/TermsOfServicePage";
+import PrivacyPolicy from "./pages/PrivacyPage";
+import HomePage from "./pages/HomePage";
+import FeaturesPage from "./pages/FeaturesPage";
+import AboutPage from "./pages/AboutPage";
+import ScrollToTop from './components/ScrollToTop'; // Import the ScrollToTop component
 
 
-import './App.css'; // Or your main Tailwind CSS file
+
+import "./App.css"; // Or your main Tailwind CSS file
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <Features />
-      <Footer />
-      {/* Other content will go here */}
-    </div>
+    <BrowserRouter>
+          <ScrollToTop /> {/* Include the ScrollToTop component */}
+
+      <div className="App">
+        {/* Define your routes */}
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+
+          <Route path="/terms" element={<TermsOfService />} />
+          <Route path="/privacy" element={<PrivacyPolicy />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/features" element={<FeaturesPage />} />
+
+          {/* Add more routes as needed */}
+        </Routes>
+
+        {/* Other content will go here */}
+      </div>
+    </BrowserRouter>
   );
 }
 
