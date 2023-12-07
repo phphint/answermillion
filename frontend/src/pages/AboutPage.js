@@ -2,15 +2,35 @@
 import NavigationBar from "../components/NavigationBar"; // Adjust the path based on your file structure
 import backgroundImage from "./page-bg.png"; // Adjust path as necessary
 import Footer from "../components/Footer"; // Adjust the path as necessary
+import { Helmet } from 'react-helmet-async';
+
 
 import React from "react";
 
 function AboutPage() {
+ 
   return (
     <div
       className="bg-cover bg-no-repeat bg-center "
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
+            <Helmet>
+        <title>About AnswerMillion - Transforming Your Calls</title>
+        <meta name="description" content="Discover how AnswerMillion revolutionizes call management with advanced AI technology. Empowering businesses with efficient communication solutions." />
+
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.answermillion.com/about" />
+        <meta property="og:title" content="About AnswerMillion - AI Communication Innovators" />
+        <meta property="og:description" content="Learn about AnswerMillion's mission to transform call management using AI technology. Join the future of seamless communication." />
+ 
+        {/* Twitter */}
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://www.answermillion.com/about" />
+        <meta property="twitter:title" content="About AnswerMillion - Leading in AI Call Management" />
+        <meta property="twitter:description" content="Explore AnswerMillion's approach to revolutionizing business communication with AI. Enhancing efficiency and engagement." />
+       </Helmet>
+     
       <div className="container mx-auto px-6 md:px-12 lg:px-24 h-full min-h-screen ">
         {/* Primary Navigation at the top */}
         <NavigationBar />

@@ -28,14 +28,14 @@ function Header() {
           {/* Additional header content aligned to the left and centered vertically */}
           <div className="flex-grow flex items-center mt-40">
             <div className="w-1/2 text-left pl-4 md:pl-0">
-              <h1 className="text-2xl md:text-4xl font-bold mb-2 text-light">
+              <h1 className="text-1xl md:text-4xl font-bold mb-2 text-light">
                 AI Answering Service
               </h1>
               <h3 className="text-3xl font-bold mb-2 text-light">
                 Transforming <span className="text-light-aqua">Your Calls</span>
               </h3>
 
-              <p className="  mb-4 text-light">
+              <p className="  mb-4 text-light hidden md:block">
                 Join AnswerMillion.com and step into{" "}
                 <span className="text-light-aqua">
                   the future of call management, where advanced AI technology
@@ -44,7 +44,7 @@ function Header() {
                 </span>
               </p>
 
-              <button className="bg-light-aqua text-light font-bold py-2 px-4 rounded-lg"  onClick={openModal}>
+              <button className="bg-light-aqua text-light font-bold py-2 px-4 rounded-lg mb-10"  onClick={openModal}>
                 Join Waiting List
               </button>
             </div>

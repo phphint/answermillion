@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 
 import TermsOfService from "./pages/TermsOfServicePage";
 import PrivacyPolicy from "./pages/PrivacyPage";
@@ -14,13 +14,14 @@ import "./App.css"; // Or your main Tailwind CSS file
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
           <ScrollToTop /> {/* Include the ScrollToTop component */}
 
       <div className="App">
         {/* Define your routes */}
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/test" element={<div>route test</div>} />
 
           <Route path="/terms" element={<TermsOfService />} />
           <Route path="/privacy" element={<PrivacyPolicy />} />
@@ -32,7 +33,7 @@ function App() {
 
         {/* Other content will go here */}
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 

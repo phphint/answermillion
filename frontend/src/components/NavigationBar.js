@@ -16,10 +16,10 @@ function NavigationBar() {
       {/* Navigation Links */}
       <div className="flex items-center space-x-6">
         <Link to="/about" className="font-medium text-light">
-          <FontAwesomeIcon icon={faInfoCircle} className="mr-2" /> About
+          <FontAwesomeIcon icon={faInfoCircle} className="hidden md:inline mr-2" /> About
         </Link>
         <Link to="/features" className="font-medium text-light">
-          <FontAwesomeIcon icon={faStar} className="mr-2" /> Features
+          <FontAwesomeIcon icon={faStar} className="hidden md:inline mr-2" /> Features
         </Link>
         {/* Additional primary navigation links can go here */}
       </div>

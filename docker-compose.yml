@@ -16,6 +16,9 @@ services:
       - MONGO_PASS
       - JWT_SECRET
       - RECAPTCHA_SECRET_KEY
+      - VIRTUAL_HOST=api.answermillion.com
+      - LETSENCRYPT_HOST=api.answermillion.com
+      - LETSENCRYPT_EMAIL=jason@mavacode.com
     volumes:
       - ./backend:/app
     depends_on:
@@ -34,10 +37,13 @@ services:
     volumes:
       - ./frontend:/app
     environment:
-      - NODE_ENV=development
+      - NODE_ENV
       - REACT_APP_API_URL
       - REACT_APP_S3_BASE_URL
       - REACT_APP_RECAPTCHA_SITE_KEY
+      - VIRTUAL_HOST=answermillion.com,www.answermillion.com
+      - LETSENCRYPT_HOST=answermillion.com,www.answermillion.com
+      - LETSENCRYPT_EMAIL=jason@mavacode.com
 
   mongodb:
     image: mongo:latest
