@@ -19,6 +19,7 @@ services:
       - VIRTUAL_HOST=api.answermillion.com
       - LETSENCRYPT_HOST=api.answermillion.com
       - LETSENCRYPT_EMAIL=jason@mavacode.com
+    restart: always
     volumes:
       - ./backend:/app
     depends_on:
@@ -44,6 +45,7 @@ services:
       - VIRTUAL_HOST=answermillion.com,www.answermillion.com
       - LETSENCRYPT_HOST=answermillion.com,www.answermillion.com
       - LETSENCRYPT_EMAIL=jason@mavacode.com
+    restart: always
 
   mongodb:
     image: mongo:latest
@@ -55,4 +57,5 @@ services:
     environment:
       - MONGO_INITDB_ROOT_USERNAME
       - MONGO_INITDB_ROOT_PASSWORD
+    restart: always
 
