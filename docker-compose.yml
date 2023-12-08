@@ -2,6 +2,8 @@ version: '3'
 
 services:
   backend:
+    networks:
+      - proxy_app-network
     build:
       context: ./backend
       dockerfile: Dockerfile
@@ -17,6 +19,7 @@ services:
       - JWT_SECRET
       - RECAPTCHA_SECRET_KEY
       - VIRTUAL_HOST=api.answermillion.com
+      - VIRTUAL_PORT=5000
       - LETSENCRYPT_HOST=api.answermillion.com
       - LETSENCRYPT_EMAIL=jason@mavacode.com
     restart: always
@@ -26,6 +29,8 @@ services:
       - mongodb
 
   frontend:
+    networks:
+      - proxy_app-network
     build:
       context: ./frontend
       args:
@@ -43,11 +48,14 @@ services:
       - REACT_APP_S3_BASE_URL
       - REACT_APP_RECAPTCHA_SITE_KEY
       - VIRTUAL_HOST=answermillion.com,www.answermillion.com
+      - VIRTUAL_PORT=3000
       - LETSENCRYPT_HOST=answermillion.com,www.answermillion.com
       - LETSENCRYPT_EMAIL=jason@mavacode.com
     restart: always
 
   mongodb:
+    networks:
+      - proxy_app-network
     image: mongo:latest
     mem_limit: 128M
     ports:
@@ -58,4 +66,8 @@ services:
       - MONGO_INITDB_ROOT_USERNAME
       - MONGO_INITDB_ROOT_PASSWORD
     restart: always
+
+networks:
+  proxy_app-network:
+    external: true
 
