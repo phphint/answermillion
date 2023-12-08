@@ -7,7 +7,8 @@ import backgroundImage from "./page-bg.png"; // Adjust path as necessary
 import Footer from "../components/Footer"; // Adjust the path as necessary
 import Features from '../components/Features'; // Adjust the path as necessary
 
- 
+import '../index.css';
+
 
 function FeaturesPage() {
  
@@ -43,7 +44,7 @@ function FeaturesPage() {
             <h1 className="text-4xl font-bold mb-2 text-light">
               Our Features
             </h1>
-            <p className="mb-4 text-light">
+            <p className="mb-4  text-2xl text-light">
               Explore the cutting-edge features that make AnswerMillion a leader in AI-powered call management.
             </p>
 

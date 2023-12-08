@@ -44,18 +44,18 @@ function AboutPage() {
             <h3 className="text-3xl font-bold mb-2 text-light">
               Transforming <span className="text-light-aqua">Your Calls</span>
             </h3>
-            <p className="mb-4 text-light">
+            <p className="text-xl mb-4 text-light">
               At AnswerMillion.com, we're dedicated to revolutionizing the way
               businesses handle their call management. Our innovative approach
               integrates advanced AI technology, providing precise and efficient
               communication solutions.
             </p>
-            <p className="mb-4 text-light">
+            <p className=" text-xl mb-4 text-light">
               Our mission is to empower businesses with smart, reliable, and
               accessible call handling services that ensure no opportunity is
               missed and every client interaction is meaningful.
             </p>
-            <p className="mb-4 text-light">
+            <p className=" text-xl mb-4 text-light">
               Join us as we step into the future of seamless communication,
               where every call is an opportunity to excel and grow.
             </p>

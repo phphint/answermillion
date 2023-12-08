@@ -8,8 +8,8 @@ function Footer() {
         
         {/* Links */}
         <div className="mb-4"> {/* Margin bottom for spacing */}
-          <Link to="/terms" className="font-medium mr-4">Terms</Link>
-          <Link to="/privacy" className="font-medium">Privacy</Link>
+          <Link to="/terms" className=" text-xl font-medium mr-4">Terms</Link>
+          <Link to="/privacy" className="text-xl font-medium">Privacy</Link>
         </div>
 
         {/* Copyright notice */}

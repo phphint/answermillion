@@ -1,5 +1,5 @@
 import React from "react";
-import { HashRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom"; // Import BrowserRouter
 
 import TermsOfService from "./pages/TermsOfServicePage";
 import PrivacyPolicy from "./pages/PrivacyPage";
@@ -14,7 +14,7 @@ import "./App.css"; // Or your main Tailwind CSS file
 
 function App() {
   return (
-    <HashRouter>
+    <BrowserRouter>
           <ScrollToTop /> {/* Include the ScrollToTop component */}
 
       <div className="App">
@@ -33,7 +33,7 @@ function App() {
 
         {/* Other content will go here */}
       </div>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 
