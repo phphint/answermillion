@@ -16,7 +16,7 @@ RUN if [ "$NODE_ENV" = "development" ]; then \
     fi
 
 # Change permissions for the .cache directory
-RUN chmod -R 777 /app/src/node_modules/.cache/
+RUN chmod -R 777 ./src/node_modules/.cache/
 
 
 # Copy app source
