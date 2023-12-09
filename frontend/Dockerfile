@@ -24,11 +24,6 @@ USER node
 # Copy app source
 COPY --chown=node:node . .
 
-# Build app for production
-RUN if [ "$NODE_ENV" = "production" ]; then \
-        npm run build; \
-    fi
-
 # Install Express server for serving the build in production
 # This is done as root because global installs might need root access
 USER root
@@ -41,6 +36,11 @@ COPY --chown=node:node server.js ./
 
 # Switch back to 'node' user to run the app
 USER node
+
+# Build app for production
+RUN if [ "$NODE_ENV" = "production" ]; then \
+        npm run build; \
+    fi
 
 # Start command
 CMD if [ "$NODE_ENV" = "production" ]; then \
