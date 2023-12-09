@@ -13,7 +13,7 @@ function AboutPage() {
     <div
       className="bg-cover bg-no-repeat bg-center "
       style={{ backgroundImage: `url(${backgroundImage})` }}
-    >
+    >  <NavigationBar />
             <Helmet>
         <title>About AnswerMillion - Transforming Your Calls</title>
         <meta name="description" content="Discover how AnswerMillion revolutionizes call management with advanced AI technology. Empowering businesses with efficient communication solutions." />
@@ -33,7 +33,7 @@ function AboutPage() {
      
       <div className="container mx-auto px-6 md:px-12 lg:px-24 h-full min-h-screen ">
         {/* Primary Navigation at the top */}
-        <NavigationBar />
+      
 
         {/* Additional header content aligned to the left and centered vertically */}
         <div className="flex-grow flex items-center mt-10 md:mt-40">

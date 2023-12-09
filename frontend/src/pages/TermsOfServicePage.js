@@ -11,7 +11,7 @@ function TermsOfServicePage() {
     <div
       className="bg-cover bg-no-repeat bg-center terms-of-service-page"
       style={{ backgroundImage: `url(${backgroundImage})` }}
-    >
+    >       <NavigationBar />
 
 <Helmet>
         <title>Terms of Service - AnswerMillion</title>
@@ -31,7 +31,7 @@ function TermsOfServicePage() {
        </Helmet>
       <div className="container mx-auto px-6 md:px-12 lg:px-24 h-full min-h-screen">
         {/* Primary Navigation at the top */}
-        <NavigationBar />
+ 
 
         {/* Terms of Service Content */}
         <div className="flex-grow flex items-center mt-10">

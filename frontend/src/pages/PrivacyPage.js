@@ -11,7 +11,7 @@ function PrivacyPage() {
     <div
       className="bg-cover bg-no-repeat bg-center privacy-page"
       style={{ backgroundImage: `url(${backgroundImage})` }}
-    >
+    >  <NavigationBar />
 
 <Helmet>
         <title>Privacy Policy - AnswerMillion</title>
@@ -33,7 +33,7 @@ function PrivacyPage() {
 
       <div className="container mx-auto px-6 md:px-12 lg:px-24 h-full min-h-screen ">
         {/* Primary Navigation at the top */}
-        <NavigationBar />
+      
 
         {/* Privacy Policy Content */}
         <div className="flex-grow flex items-center mt-10">
