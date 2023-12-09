@@ -15,6 +15,10 @@ RUN if [ "$NODE_ENV" = "development" ]; then \
         npm install --only=production; \
     fi
 
+# Change permissions for the .cache directory
+RUN chmod -R 777 node_modules/.cache/
+
+
 # Copy app source
 COPY . .
 
