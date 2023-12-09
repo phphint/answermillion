@@ -15,13 +15,14 @@ RUN if [ "$NODE_ENV" = "development" ]; then \
         npm install --only=production; \
     fi
 
-# Change permissions for the .cache directory
-RUN chmod -R 777 node_modules/.cache/
+# Change ownership of the app directory to the 'node' user
+RUN chown -R node:node /app
 
-
+# Switch to 'node' user
+USER node
 
 # Copy app source
-COPY . .
+COPY --chown=node:node . .
 
 # Build app for production
 RUN if [ "$NODE_ENV" = "production" ]; then \
@@ -29,12 +30,17 @@ RUN if [ "$NODE_ENV" = "production" ]; then \
     fi
 
 # Install Express server for serving the build in production
+# This is done as root because global installs might need root access
+USER root
 RUN if [ "$NODE_ENV" = "production" ]; then \
         npm install express; \
     fi
 
 # Copy express server script
-COPY server.js ./
+COPY --chown=node:node server.js ./
+
+# Switch back to 'node' user to run the app
+USER node
 
 # Start command
 CMD if [ "$NODE_ENV" = "production" ]; then \
