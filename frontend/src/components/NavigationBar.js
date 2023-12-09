@@ -12,7 +12,7 @@ function NavigationBar() {
     
       {/* Logo Text */}
       <div>
-      <Link to="/" className="flex items-center text-2xl md:text-3xl font-bold text-dark">
+      <Link to="/" className="flex items-center text-2xl md:text-3xl font-bold text-light">
         <Image2Vector className=" w-12 h-12 mr-2 " alt="Logo" />
  AnswerMillion
         </Link>
