@@ -2,21 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
- 
+
 .recaptcha-wrapper {
   display: flex;
   justify-content: center; /* Center horizontally */
@@ -24,11 +23,14 @@ code {
   transform-origin: center; /* Ensure it scales from the center */
 }
 body {
-  background: 
-    radial-gradient(circle at top left, #47aebf, rgba(71,174,191,0) 70%), 
-    radial-gradient(circle at top right, #112a3e, rgba(17,42,62,0) 70%), 
-    radial-gradient(circle at bottom left, #0b1522, rgba(11,21,34,0) 70%), 
-    radial-gradient(circle at bottom right, #152f43, rgba(21,47,67,0) 70%);
+  background: radial-gradient(
+      circle at top left,
+      #47aebf,
+      rgba(71, 174, 191, 0) 70%
+    ),
+    radial-gradient(circle at top right, #112a3e, rgba(17, 42, 62, 0) 70%),
+    radial-gradient(circle at bottom left, #0b1522, rgba(11, 21, 34, 0) 70%),
+    radial-gradient(circle at bottom right, #152f43, rgba(21, 47, 67, 0) 70%);
   background-size: 100% 100%;
   height: 100vh;
   margin: 0;
@@ -37,28 +39,18 @@ body {
 .features-page .features.bg-dark {
   background-color: rgba(0, 0, 0, 0.2); /* Black with 50% opacity */
   border-radius: 20px; /* Big radius for rounded corners */
-  margin-bottom:1rem;
+  margin-bottom: 1rem;
 }
 
 .bg-cover.home-page {
   box-shadow: inset 0 -1px 15px rgba(0, 0, 0, 0.4);
   border-bottom: 2px solid #7da3b8;
-
-
- 
 }
 
-
 nav.top-nav {
- 
   width: 100%;
   background-color: rgba(0, 0, 0, 0.2); /* Black with 20% opacity */
   z-index: 1000; /* High z-index to ensure it stays on top */
   padding-left: 6rem;
-padding-right: 6rem;
-}
-
-
-.container.main  {
- 
+  padding-right: 6rem;
 }
