@@ -29,26 +29,26 @@ function TermsOfServicePage() {
         <meta property="twitter:title" content="AnswerMillion's Terms of Service" />
         <meta property="twitter:description" content="Explore the terms and conditions for using AnswerMillion's services. Detailed guidelines for our users." />
        </Helmet>
-      <div className="container mx-auto px-6 md:px-12 lg:px-24 h-full min-h-screen">
+      <div className="container mx-auto px-6 md:px-12 lg:px-24 h-full min-h-screen ">
         {/* Primary Navigation at the top */}
  
 
         {/* Terms of Service Content */}
-        <div className="flex-grow flex items-center mt-10">
-          <div className="text-left pl-4 md:pl-0">
-            <h1 className="text-4xl font-bold mb-2 text-light">
+        <div className="flex-grow flex items-center mt-10 bg-light p-4 rounded-lg">
+        <div className="text-left pl-4 md:pl-0 ">
+            <h1 className="text-4xl font-bold mb-2 text-dark ">
               Terms of Service
             </h1>
-            <p className="mb-4 text-light">
+            <p className="mb-4 text-dark">
               Welcome to AnswerMillion. Please read our terms and conditions
               carefully.
             </p>
             {/* Add your terms of service details here */}
-            <p className="mb-4 text-light">
+            <p className="mb-4 text-dark">
               <strong>Terms of Service</strong>
             </p>
-            <p className="mb-4 text-light">Last updated: Dec. 7th 2023</p>
-            <p className="mb-4 text-light">
+            <p className="mb-4 text-dark">Last updated: Dec. 7th 2023</p>
+            <p className="mb-4 text-dark">
               Welcome to AnswerMillion. These terms of service outline the rules
               and regulations for the use of our AI-powered call management
               platform. By accessing and using our service, you accept these
@@ -56,7 +56,7 @@ function TermsOfServicePage() {
               AnswerMillion's service if you do not accept all of the terms and
               conditions stated on this page.
             </p>
-            <p className="mb-4 text-light">
+            <p className="mb-4 text-dark">
               <strong>Service Description</strong>
               <br />
               AnswerMillion provides AI-powered call management services,
@@ -64,7 +64,7 @@ function TermsOfServicePage() {
               recording and storage, real-time call transcription, and
               AI-powered response capabilities.
             </p>
-            <p className="mb-4 text-light">
+            <p className="mb-4 text-dark">
               <strong>No Liability</strong>
               <br />
               AnswerMillion shall not be held liable for any indirect,
@@ -78,7 +78,7 @@ function TermsOfServicePage() {
               tort (including negligence) or any other legal theory, whether or
               not we have been informed of the possibility of such damage.
             </p>
-            <p className="mb-4 text-light">
+            <p className="mb-4 text-dark">
               <strong>Service Availability</strong>
               <br />
               While we aim to ensure that our service is available 24 hours a
@@ -88,14 +88,14 @@ function TermsOfServicePage() {
               system failure, maintenance or repair or for reasons beyond our
               control.
             </p>
-            <p className="mb-4 text-light">
+            <p className="mb-4 text-dark">
               <strong>Changes to Terms</strong>
               <br />
               We reserve the right to amend these terms at any time. Your
               continued use of the service after any such changes constitutes
               your acceptance of the new terms.
             </p>
-            <p className="mb-4 text-light">
+            <p className="mb-4 text-dark">
               <strong>Contact Us</strong>
               <br />
               If you have any questions or concerns about these terms, please
