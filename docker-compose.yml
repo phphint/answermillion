@@ -7,7 +7,7 @@ services:
     build:
       context: ./backend
       dockerfile: Dockerfile
-    mem_limit: 512M
+    mem_limit: 64M
     ports:
       - "5003:5000"
     environment:
@@ -36,7 +36,7 @@ services:
       args:
         - NODE_ENV
       dockerfile: Dockerfile
-    mem_limit: 2048M
+    mem_limit: 256M
     user: "1000:1000"
     ports:
       - "3002:3000"
@@ -57,7 +57,7 @@ services:
     networks:
       - proxy_app-network
     image: mongo:latest
-    mem_limit: 128M
+    mem_limit: 64M
     ports:
       - "27017:27017" # Maps port 27017 of the host to port 27017 of the container
     volumes:
